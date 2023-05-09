@@ -34,7 +34,7 @@ class CommentScreen extends StatelessWidget {
                         final comment = commentController.comments[index];
                         return ListTile(
                           leading: CircleAvatar(
-                            backgroundColor: Colors.black,
+                            backgroundColor: Colors.deepPurple,
                             backgroundImage: NetworkImage(comment.profilePhoto),
                           ),
                           title: Row(
@@ -43,7 +43,7 @@ class CommentScreen extends StatelessWidget {
                                 "${comment.username}  ",
                                 style: const TextStyle(
                                   fontSize: 20,
-                                  color: Colors.red,
+                                  color: Colors.pinkAccent,
                                   fontWeight: FontWeight.w700,
                                 ),
                               ),
@@ -104,6 +104,7 @@ class CommentScreen extends StatelessWidget {
                     fontSize: 16,
                     color: Colors.white,
                   ),
+                  //decoration: BoxDecoration(color: buttonColor,
                   decoration: const InputDecoration(
                     labelText: 'Comment',
                     labelStyle: TextStyle(
@@ -111,16 +112,16 @@ class CommentScreen extends StatelessWidget {
                       color: Colors.white,
                       fontWeight: FontWeight.w700,
                     ),
-                    enabledBorder: UnderlineInputBorder(
+                    /*enabledBorder: UnderlineInputBorder(
                       borderSide: BorderSide(
                         color: Colors.red,
                       ),
-                    ),
-                    focusedBorder: UnderlineInputBorder(
+                    ),*/
+                    /*focusedBorder: UnderlineInputBorder(
                       borderSide: BorderSide(
                         color: Colors.red,
                       ),
-                    ),
+                    ),*/
                   ),
                 ),
                 trailing: TextButton(

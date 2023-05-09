@@ -37,7 +37,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           }
           return Scaffold(
             appBar: AppBar(
-              backgroundColor: Colors.black12,
+              backgroundColor: Colors.deepPurple,
               leading: const Icon(
                 Icons.person_add_alt_1_outlined,
               ),
